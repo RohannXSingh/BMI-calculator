@@ -4,7 +4,8 @@ function calculate (){
     
 
    if (isNaN(calculateHeight) || isNaN(calculateWeight) || calculateHeight <= 0 || calculateWeight <=0) {
-       document.getElementById('finalresult').innerText = "Enter valid Height or Weight";
+       document.getElementById('finalresult').innerText = "Enter valid Height or Weight"
+       return;
     //Check if calculatedHeight and calculatedWeight is valid or not
    }
        const BMIcalculate = calculateWeight / ((calculateHeight / 100) **2);
